@@ -1,0 +1,563 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --maxwidth: 1440px;
+}
+li{
+    list-style-type: none;
+}
+
+.hide{
+    display: none;
+}
+
+.hiddenondesktop{
+    display: none;
+}
+
+.flexondesktop{
+    display: flex;
+    justify-content: space-evenly;
+}
+svg{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.all-content{
+    font-family: "Gothic A1";
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*====================NAVIGATION=====================*/
+
+
+header{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 95vh;
+    padding: 50px 10%;
+}
+
+nav.hiddenonmobile ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav.hiddenonmobile ul li{
+    width: max-content;
+}
+
+
+
+.email{
+    border: 1px solid white;
+}
+
+.email:hover, .signup:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+.signup{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+.email, .signup{
+    padding: 10px 24px;
+    margin-left: 2vw;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+
+
+.contacts{
+    max-width: 500px;
+}
+
+
+nav{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.nav-list span{
+    padding: 0px 15px;
+    margin-left: 3vw;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.nav-list span:hover{
+    color: rgb(144, 144, 144);
+}
+
+.nav-list span:active{
+    color: black;
+}
+
+
+@media screen and (max-width:1000px) {
+    .flexondesktop{
+        display: block;
+    }
+    .hiddenonmobile{
+        display: none;
+    }
+
+    .hiddenondesktop{
+        display: block;
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul img{
+        width: 120px;
+        max-width: 28vw;
+    }
+
+    .hiden{
+        width: 100vw;
+        position: fixed;
+        top: 0%;
+        text-align: center;
+        left: 0px;
+        height: 100vh;
+        background-color:rgba(28, 38, 171);
+        opacity: 1;
+        z-index: 20;
+    }
+
+    .hiden li{
+        margin-top: 15vh;
+    }
+
+    .hiden svg#close{
+        position: relative;
+        left: 40vw;
+        top: 10px;
+    }
+
+    .contacts{
+        width: max-content;
+        margin: auto;
+    }
+
+    .hiden{
+        display: none;
+    }
+
+
+}
+
+/*=====================+END OF NAVIGATION====================*/
+
+div.controlwidth{
+    max-width: var(--maxwidth);
+    margin: auto;
+}
+
+div.hero{
+    
+    max-width: 500px;
+    margin-top: 20vh;
+}
+
+.intro{
+    width: fit-content;
+    padding: 8px 16px;
+    margin: 10px 0px;
+    font-size: 12px;
+    border-radius: 999px;
+    border: 1px solid white;
+    letter-spacing: 0.12em;
+}
+
+.hero h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.hero p{
+    line-height: 24px;
+}
+
+.hero .sign-up{
+    margin-top: 30px;
+    padding:10px 4px 14px 32px;
+    width: max-content;
+    border-radius: 999px;
+    border: 1px solid white;
+    background: rgba(86, 147, 210, 0.1);
+}
+
+.hero .sign-up input{
+    background: rgb(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 300px;
+    max-width: 50vw;
+}
+
+.hero .terms{
+    font-size: 12px;
+    width: 365px;
+    max-width: 50vw;
+    margin-top: 15px;
+}
+
+.terms a{
+    font-weight: 700;
+}
+
+.features{
+    margin: 5% 10%;
+}
+
+
+
+
+.features .title{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+
+.features .title p{
+    width: fit-content;
+    margin: auto;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    padding: 8px 16px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 33px;
+}
+
+
+.features h2{
+    font-size: 40px;
+}
+
+.features ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+}
+
+.features ul li{
+    width: 360px;
+    max-width: 23vw;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.features ul li img{
+    margin: 20px 0px;
+}
+
+.features li h4{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.features li p{
+    line-height: 24px;
+    margin: 15px 0px;
+}
+
+
+
+
+div.start{
+    background-image: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.start h2{
+    font-size: 48px;
+    margin: 20px 0px;
+}
+
+.start p{
+    font-size: 16px;
+    margin: 30px 0px;
+}
+
+.start div div{
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    width: max-content;
+    margin: 5vh auto;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.start div div:hover{
+    color: white;
+    background-color: rgb(52, 52, 52);
+}
+.start div div:active{
+    background-color: black;
+}
+
+
+
+
+
+
+.testimonials{
+    background-color: #F7F7FF;
+    z-index: -1;
+    margin-top: -20px;
+    padding-bottom: 10%;
+}
+
+.testimonials .controlwidth{
+    padding-top: 100px;
+}
+
+
+
+
+.testimonials h3{
+    width: fit-content;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    padding: 8px 16px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 33px;
+    margin-left: 20px;
+}
+
+.testimonials h2{
+    margin-top: 50px;
+    max-width: 270px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 20px;
+}
+
+.testimonials ul li{
+    margin: 50px 30px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+    width: max-content;
+    border-radius: 8px 8px 0px 0px;
+    padding-top: 4px;
+    width: 360px;
+    max-width: 80vw;
+    background:linear-gradient(90deg, #1C26AB 0%, rgba(28, 38, 171, 0.8) 39.58%, #62CDF7 100%);;
+}
+
+.reviews li p{
+    background-color: rgb(255, 255, 255, 1);
+    font-size: 14px;
+    padding: 22px 32px;
+    line-height: 24px;
+    border-bottom: 1px solid black;
+}
+
+.reviews .about{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 32px;
+    border-bottom: 1px solid white;
+}
+
+.reviews .about .img{
+    background-color: #0557E4;
+    padding: 10px 9px;
+    color: white;
+    border-radius: 999px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.reviews .second{
+    padding: 0px 5px;
+}
+
+.reviews .second .name{
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+}
+
+.reviews .second .school{
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    max-width: 150px;
+    padding: 6px 0px;
+}
+
+section{
+    background-color: white;
+    width: max-content;
+    padding: 10%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+section img{
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    border-top: 1px solid black;
+    padding: 30px;
+    max-height: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+footer span{
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    div.hero{
+        margin-top: 20%;
+    }
+    .hero h1{
+        font-size: 42px;
+    }
+
+    .hero p{
+        font-size: 14px;
+    }
+
+    .hero .sign-up .signup{
+        padding: 5px 10px;
+    }
+
+    .hero .sign-up{
+        padding:7px 4px 10px 15px;
+    }
+
+    .hero .sign-up input{
+        font-size: 13px;
+    }
+
+    .features h2{
+        font-size: 30px;
+    }
+
+    .features ul{
+        display: block;
+    }
+
+    .features ul li img{
+        width: 50px;
+    }
+
+    .features{
+        margin: 5% 2%;
+    }
+
+    .features ul li{
+        max-width: 70vw;
+        padding: 30px 5px;
+    }
+
+    .start h2{
+        font-size: 37px;
+    }
+
+    .start div div{
+        padding: 10px 22px;
+        font-size: 13px;
+    }
+
+    .reviews .about{
+        padding: 10px ;
+    }
+
+    .reviews .second .name{
+        font-size: 13px;
+        letter-spacing: 0em;
+    }
+
+    .reviews li p{
+        padding: 25px 10px;
+    }
+
+    .testimonials h3{
+        margin: auto;
+    }
+
+    .testimonials div.margin{
+        width: max-content;
+        margin: auto;
+        text-align: center;
+    }
+
+    .testimonials ul li{
+        margin-top: 20px;
+    }
+}
